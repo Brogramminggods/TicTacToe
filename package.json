@@ -1,0 +1,26 @@
+{
+  "name": "late-term-assingment",
+  "version": "1.0.0",
+  "description": "HUGB_TicTacToe",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js",
+    "clean": "rm -rf node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brogramminggods/TicTacToe.git"
+  },
+  "author": "Brogrammers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brogramminggods/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/Brogramminggods/TicTacToe#readme",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0"
+  }
+}
