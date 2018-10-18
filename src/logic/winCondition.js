@@ -1,0 +1,1 @@
+// ./src/logic/winCondition.js
