@@ -1,0 +1,6 @@
+# Node files
+/node_modules
+
+# Documentation
+Late-term-Assignment-1.pdf
+*.pdf
