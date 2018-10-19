@@ -11,6 +11,6 @@ describe("GET /tictactoe/:name endpoint", () => {
  
  it("should return the tictactoe hello message in a object", async () => {
  const res = await request(api).get("/tictactoe/Diana");
- expect(res.body.greeting).toBe("Welcome To TicTacToe, Diana!");
+ expect(res.body.tictactoe).toBe("Welcome To TicTacToe, Diana!");
  });
 });
