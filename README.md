@@ -6,4 +6,6 @@ For first time setup perform:
 
 git clone git@github.com:Brogramminggods/TicTacToe.git
 
+cd TicTacToe
+
 npm install
