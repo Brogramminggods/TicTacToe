@@ -3,4 +3,4 @@ function tictactoe(name) {
     return "Welcome To TicTacToe, " + name + "!";
 }
 
-module.exports = greeting;
+module.exports = tictactoe;
