@@ -1,5 +1,6 @@
-// ./src/client/index.js
+const css = require('../css/app.css');
 const _ = require("lodash");
+
 function component() {
     let element = document.createElement('div');
     element.innerHTML = _.join(['Hello', 'there!'], ' ');

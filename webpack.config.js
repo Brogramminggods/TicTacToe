@@ -8,11 +8,19 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Greeting page'
+			title: 'Greeting page',
+			template: 'src/html/index.ejs' // load a custom template	
 		}),
 		new CleanWebpackPlugin(['dist'])
 	],
-
+	module: {
+		rules: [
+		  {
+			test: /\.css$/,
+			use: [ 'style-loader', 'css-loader' ]
+		  }
+		]
+	  },
 	devServer: {
 		port: 3000,
 		open: true,
