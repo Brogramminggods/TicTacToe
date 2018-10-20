@@ -6,7 +6,7 @@ var computerMove = function(board, xOrO){
         var col = Math.floor(Math.random() * 3); 
         if(board[row][col] == 0)
         {
-            board[0][0] = xOrO;
+            board[row][col] = xOrO;
             return board;
         }
     }
