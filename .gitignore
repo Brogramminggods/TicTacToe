@@ -4,3 +4,6 @@
 # Documentation
 Late-term-Assignment-1.pdf
 *.pdf
+
+# Webpack files
+/dist
