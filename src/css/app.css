@@ -4,13 +4,23 @@ h1 {
     color: royalblue;
 }
 
+table {
+    font-size: 70px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
 td {
-    height: 100pxç;
+    height: 100px;
     width: 100px;
 }
 
-#two, #five, #eight {
-    
+#one, #four, #seven {
     border-left:3px solid #000;
     border-right:3px solid #000;
+}
+
+#three, #four, #five {
+    border-top:3px solid #000;
+    border-bottom:3px solid #000;
 }
