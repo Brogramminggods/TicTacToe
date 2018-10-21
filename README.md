@@ -30,9 +30,9 @@ git merge <your_branch_name>
 ## TODO:
 
 - [x] Created a organisation for the team on GitHub
-- [ ] Feature branches and pull requests
+- [x] Feature branches and pull requests
 - [x] Unit tests
-- [ ] Coded game logic
+- [x] Coded game logic
 - [x] Documentation using markdown
 - [ ] Design report
 - [x] Development manual
@@ -42,7 +42,7 @@ git merge <your_branch_name>
 - [ ] UI in console
 - [ ] Output of the build tool is executable artifact
 - [ ] Deployment target in build script that deploys console artifact outside of working directory
-- [ ] Graphical UI using website
+- [x] Graphical UI using website
 - [ ] More build targets, list what build targets you plan to add
 - [ ] Deployment target in build script that deploys website to external server
 - [ ] Focused integrations tests
