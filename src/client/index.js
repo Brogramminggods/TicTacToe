@@ -48,6 +48,11 @@ function ticTacToe(row, col) {
 	}
 	if(gameState === 0) {
 		// The game is still in progress
+		if(moveNr === 8) {
+			// Is a draw
+			console.log("Reseting board");
+			reset();
+		}
 	} else if(gameState === 1) {
 		// X has won 
 		console.log("Reseting board");
