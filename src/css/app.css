@@ -4,7 +4,7 @@ h1 {
     color: royalblue;
 }
 
-table {
+.board {
     font-size: 70px;
     margin: auto;
     border-collapse: collapse;
