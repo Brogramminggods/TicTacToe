@@ -2,6 +2,7 @@ const css = require('../css/app.css');
 const hasWon = require("../logic/hasWon");
 const tictactoe = require("../logic/tictactoe");
 const sumOf2D = require("../logic/sumOf2D");
+const boardInsert = require("../logic/boardInsert")
 
 var moveNr = 0;
 var board = [[0,0,0],[0,0,0],[0,0,0]]; 
@@ -11,6 +12,7 @@ for(var i = 0; i < 9; i++) {
 	htmlBoard[i].addEventListener("click", function() {ticTacToe(floor(i/3), (i%3));});
 }
 */
+
 htmlBoard[0].addEventListener("click", function() {playerMove(0, 0);});
 htmlBoard[1].addEventListener("click", function() {playerMove(0, 1);});
 htmlBoard[2].addEventListener("click", function() {playerMove(0, 2);});
@@ -26,9 +28,14 @@ function playerMove(row, col) {
   if(moveMade = true)
   {
     moveNr++;
-    console.log(moveNr);
+    boardInsert(row, col, htmlBoard, moveNr);
     if(hasWon(board)) {
-      console.log("Player " + moveNr%2+1 +" has won");
+      console.log("Player " + (moveNr%2+1) +" has won");
+      reset();
+    }
+    if(moveNr == 9)
+    {
+      console.log("Players, your game ended in a draw")
       reset();
     }
 }
