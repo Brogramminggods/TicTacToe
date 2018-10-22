@@ -1,15 +1,15 @@
-const tictactoe = require('./tictactoe');
+const sumOf2D = require('./sumOf2D');
 
 describe("Sums the arr", () => {
     // A blank game board 
     it("Sums a empty board", () => {
-        expect(tictactoe(0,0,[[0,0,0],
+        expect(sumOf2D([[0,0,0],
                         [0,0,0],
-                        [0,0,0]], 0, 0)).toBe(true);
+                        [0,0,0]])).toBe(0);
     })
     it("sums a board with mixed numbers", () => {
-        expect(tictactoe(0,0,[[2,1,1],
+        expect(sumOf2D([[2,1,1],
                         [1,0,2],
-                        [0,2,1]],0,0)).toBe(false);
+                        [0,2,1]])).toBe(2+1+1+1+2+2+1);
     })
 });
