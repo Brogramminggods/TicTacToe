@@ -3,9 +3,14 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>TICTACTOE</title>
 </head>
 <body>
+    <div class="jumbotron text-center">
+        <h1>Tic Tac Toe</h1>
+        <p>Brogrammers</p> 
+      </div>
     <table 
     class="board">
         <tr class="top">
@@ -24,5 +29,9 @@
           <td id="eight" class="cell"></td>
         </tr>
       </table>
+      <button id="resetButton" type="button" class="btn btn-outline-dark">Restart</button>
+      <p id="playerTurnDisplay">X, it's your turn!</p>
+      <p id="XplayerScoreDisplay">X has 0 points!</p>
+      <p id="OplayerScoreDisplay">O has 0 points!</p>
 </body>
 </html>
