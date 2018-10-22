@@ -12,6 +12,9 @@ body {
     font-size: 2em;
 }
 
+.jumbotron {
+    background-color: black;
+}
 .board {
     font-size: 70px;
     margin: auto;
