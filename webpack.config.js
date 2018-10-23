@@ -31,6 +31,7 @@ module.exports = {
 	},
 
 	entry: './src/client/index.js',
+	//entry: './src/html/index.ejs',
 	output: {
 		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist')
