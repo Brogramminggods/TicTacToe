@@ -19,13 +19,8 @@ git checkout -b <your_branch_name>
 git push -u origin <your_branch_name>
 ```
 #### And when you are ready to merge:
-```
-git push
+Create a pullrequest on github.com
 
-git checkout master
-
-git merge <your_branch_name>
-```
 
 ## TODO:
 

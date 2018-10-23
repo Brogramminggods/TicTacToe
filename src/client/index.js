@@ -1,4 +1,4 @@
-const css = require('../css/app.css');
+//const css = require('../css/app.css');
 const hasWon = require("../logic/hasWon");
 const tictactoe = require("../logic/tictactoe");
 const sumOf2D = require("../logic/sumOf2D");
