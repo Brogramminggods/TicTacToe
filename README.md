@@ -19,12 +19,11 @@ git checkout -b <your_branch_name>
 git push -u origin <your_branch_name>
 ```
 #### And when you are ready to merge:
+Create pullrequest
 ```
 git push
 
-git checkout master
-
-git merge <your_branch_name>
+git request-pull git@github.com:Brogramminggods/TicTacToe.git
 ```
 
 ## TODO:
