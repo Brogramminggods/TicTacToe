@@ -23,7 +23,7 @@ Create pullrequest
 ```
 git push
 
-git request-pull git@github.com:Brogramminggods/TicTacToe.git
+git request-pull
 ```
 
 ## TODO:
