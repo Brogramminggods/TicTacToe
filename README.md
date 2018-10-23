@@ -21,6 +21,14 @@ git push -u origin <your_branch_name>
 #### And when you are ready to merge:
 Create a pullrequest on github.com
 
+## Push to heroku
+```
+// From a branch
+git push heroku <your_branch_name>:master
+
+// From git master
+git push heroku master
+```
 
 ## TODO:
 
