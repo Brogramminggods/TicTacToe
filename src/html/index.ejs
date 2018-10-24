@@ -5,6 +5,61 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/app.css">
+  <style>
+    h1 {
+        text-align: center;
+        color: royalblue;
+    }
+
+    body {
+        text-align: center;
+        background-color: black;
+        color: #fff;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2em;
+    }
+
+    .jumbotron {
+        background-color: black;
+    }
+    .board {
+        font-size: 70px;
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    td {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+    }
+
+    #one, #four, #seven {
+        border-left:5px solid #fff;
+        border-right:5px solid #fff;
+    }
+
+    #three, #four, #five {
+        border-top:5px solid #fff;
+        border-bottom:5px solid #fff;
+    }
+
+    #playerTurnDisplay{
+        margin: auto;
+        margin-top: 50px;
+        height: 50px;
+        width: 250px;
+    }
+    #XplayerScoreDisplay, #OplayerScoreDisplay {
+        display:inline-block;
+        margin: auto;
+        height: 50px;
+        width: 100%;
+    }
+
+    button {
+        margin-top: 20px;
+}</style>
   <title>TICTACTOE</title>
 </head>
 <body>
