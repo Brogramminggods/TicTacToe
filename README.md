@@ -23,12 +23,21 @@ Create a pullrequest on github.com
 
 ![Or else](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
-## Push to heroku
+## Heroku
+#### Setup heroku
+Create an account on [Heroku](https://signup.heroku.com/) and 
+install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) then run:
 ```
-// From a branch
+heroku git:remote -a brogramminggods
+```
+to add heroku as a git remote
+
+#### Pushing with heroku
+``` 
+// Pushing from <your_branch_name> to heroku
 git push heroku <your_branch_name>:master
 
-// From git master
+// Pushing from git master to heroku master
 git push heroku master
 ```
 
