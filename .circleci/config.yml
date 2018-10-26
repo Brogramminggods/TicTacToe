@@ -41,9 +41,26 @@ jobs:
         
       # run tests!
       - run: npm test
+    
+  deploy:
+        docker:
+          - image: buildpack-deps:trusty
+        steps:
+          - checkout
+          - run:
+              name: Deploy Master to Heroku
+              command: |
+                git push https://heroku:a685a5b1-0d81-4894-bc67-32ba1424b050@git.heroku.com/brogramminggods.git master
 
-  deployment:
-    staging:
-      branch: master
-      heroku:
-        appname: brogramminggods
+    workflows:
+      version: 2
+      build-deploy:
+        jobs:
+          - build
+          - deploy:
+              requires:
+                - build
+              filters:
+                branches:
+                  only: master
+                  
