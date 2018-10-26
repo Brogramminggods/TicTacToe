@@ -28,6 +28,7 @@ Create a pullrequest on [github.com](https://github.com/Brogramminggods/TicTacTo
 Create an account on [Heroku](https://signup.heroku.com/) and 
 install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), then run:
 ```
+heroku login
 heroku git:remote -a brogramminggods
 ```
 to add heroku as a git remote repository that you can push to
