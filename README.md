@@ -1,5 +1,5 @@
 # Tic Tac Toe
-STATUS: [![CircleCI](https://circleci.com/gh/Brogramminggods/TicTacToe.svg?style=svg)](https://circleci.com/gh/Brogramminggods/TicTacToe/branches)
+STATUS: [![CircleCI](https://circleci.com/gh/Brogramminggods/TicTacToe.svg?style=svg)](https://circleci.com/gh/Brogramminggods/TicTacToe)
 
 ## Dev Setup
 #### For first time setup perform:
@@ -19,7 +19,7 @@ git checkout -b <your_branch_name>
 git push -u origin <your_branch_name>
 ```
 #### And when you are ready to merge:
-Create a pullrequest on [github.com](https://github.com/Brogramminggods/TicTacToe). Or else...
+Create a pullrequest on [github.com](https://github.com/Brogramminggods/TicTacToe/branches). Or else...
 
 ![Or else](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
