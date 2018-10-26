@@ -23,18 +23,45 @@ Create a pullrequest on github.com
 
 ![Or else](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
-## Push to heroku
+## Heroku
+#### Setup heroku
+Create an account on [Heroku](https://signup.heroku.com/) and 
+install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), then run:
 ```
-// From a branch
+heroku git:remote -a brogramminggods
+```
+to add heroku as a git remote repository that you can push to
+
+#### Pushing with heroku
+``` 
+// Pushing from <your_branch_name> to heroku master
 git push heroku <your_branch_name>:master
 
-// From git master
+// Pushing from git master to heroku master
 git push heroku master
+```
+
+#### Heroku scaling 
+```
+// To see all instances running on heroku 
+heroku ps
+
+// To start one instance of the site on heroku 
+heroku ps:scale web=1
+
+// To stop all instances of the site on heroku
+heroku ps:scale web=0
+
+// To open the site on heroku 
+heroku open
+
+// To run the site locally
+heroku local 
 ```
 
 ## TODO:
 
-- [x] Created a organisation for the team on GitHub
+- [x] Created a organization for the team on GitHub
 - [x] Feature branches and pull requests
 - [x] Unit tests
 - [x] Coded game logic
