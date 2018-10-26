@@ -21,6 +21,8 @@ git push -u origin <your_branch_name>
 #### And when you are ready to merge:
 Create a pullrequest on github.com
 
+![Or else](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
+
 ## Push to heroku
 ```
 // From a branch
