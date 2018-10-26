@@ -1,5 +1,5 @@
 # Tic Tac Toe
-STATUS: [![CircleCI](https://circleci.com/gh/Brogramminggods/TicTacToe.svg?style=svg)](https://circleci.com/gh/Brogramminggods/TicTacToe)
+STATUS: [![CircleCI](https://circleci.com/gh/Brogramminggods/TicTacToe.svg?style=svg)](https://circleci.com/gh/Brogramminggods/TicTacToe/branches)
 
 ## Dev Setup
 #### For first time setup perform:
