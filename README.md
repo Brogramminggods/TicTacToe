@@ -19,7 +19,7 @@ git checkout -b <your_branch_name>
 git push -u origin <your_branch_name>
 ```
 #### And when you are ready to merge:
-Create a pullrequest on github.com
+Create a pullrequest on [github.com](https://github.com/Brogramminggods/TicTacToe). Or else...
 
 ![Or else](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
