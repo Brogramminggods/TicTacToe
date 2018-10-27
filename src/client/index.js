@@ -2,7 +2,6 @@
 const hasWon = require("../logic/hasWon");
 const tictactoe = require("../logic/tictactoe");
 const sumOf2D = require("../logic/sumOf2D");
-const boardInsert = require("../logic/boardInsert");
 const increaseScore = require("../logic/increaseScore");
 const setPlayerMove = require("../logic/setPlayerMove");
 
@@ -31,14 +30,22 @@ htmlBoard[8].addEventListener("click", function() {playerMove(2, 2);});
 
 function playerMove(row, col) {
   var moveMade = tictactoe(row, col, board, htmlBoard, moveNr);
-  if(moveMade = true)
+  if(moveMade == true)
   {
     moveNr++;
-    boardInsert(row, col, htmlBoard, moveNr);
-    if(hasWon(board)) {
-      increaseScore(xScore, yScore, moveNr);
-      reset();
-    }
+      fetch("/api/boardInsert/"+moveNr)
+      .then(function(res){
+        return res.json();
+      })
+      .then(function(data){
+        console.log(data);
+        htmlBoard[row*3+col].innerHTML = data.boardInsert;
+      });
+      //reset();
+      if(hasWon(board))
+      {
+
+      }
     if(moveNr == 9)
     {
       console.log("Players, your game ended in a draw")
