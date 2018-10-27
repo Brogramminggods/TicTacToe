@@ -24,6 +24,7 @@ Create a pullrequest on [github.com](https://github.com/Brogramminggods/TicTacTo
 ![Or else](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 
 ## Heroku
+![HEROKU](https://media.giphy.com/media/AmC5W2bbc41wY/giphy.gif)
 #### Setup heroku
 Create an account on [Heroku](https://signup.heroku.com/) and 
 install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), then run:
@@ -76,8 +77,8 @@ heroku local
 - [ ] Output of the build tool is executable artifact
 - [ ] Deployment target in build script that deploys console artifact outside of working directory
 - [x] Graphical UI using website
-- [ ] More build targets, list what build targets you plan to add
-- [ ] Deployment target in build script that deploys website to external server
+- [x] More build targets, list what build targets you plan to add
+- [x] Deployment target in build script that deploys website to external server
 - [ ] Focused integrations tests
 - [ ] End-to-end tests using Puppeteer
-- [ ] Continuous Delivery
+- [x] Continuous Delivery
