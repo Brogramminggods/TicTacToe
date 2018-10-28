@@ -1,10 +1,11 @@
 ## Administration Manual
 #### Welcome! Here's what you need to do to get things up and running.
 ###### You'll need to have an account on GitHub, if you don't have one, go to github.com and create one!
+## Admin Setup
 ###### You'll also need:
-* Git version 2.19.1 or later
-* Node version 8.12.0 or later
-* npm version 6.04.1 or later
+* Git	version 2.19.1 or later
+* Node	version 8.12.0 or later
+* npm	version 6.04.1 or later
 * A text editor to work on the code, we recommend Visual Studio Code
 
 #### When you set up for the first time:
@@ -20,7 +21,7 @@ npm install
 
 #### Now that you've got things set up on your computer, you can change things whenever at will.
 
-#### If you want to make any changes to the project, you should do so by creating a branch, working on the branch, and then create a pull request where another teammember will have to review and accept the request.
+#### If you want to make any changes to the project, you should do so by creating a branch, working on the branch, and then create a pull request where another team member will have to review and accept the request.
 ##### To create a new branch, do the following:
 ```
 git checkout -b <branch_name>
