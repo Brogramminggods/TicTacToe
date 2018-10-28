@@ -1,10 +1,10 @@
 //const css = require('../css/app.css');
-const hasWon = require("../logic/hasWon");
 const tictactoe = require("../logic/tictactoe");
 const increaseScore = require("../logic/increaseScore");
 const setPlayerMove = require("../logic/setPlayerMove");
 
 var moveNr = 0;
+var hasWon = false;
 var board = [[0,0,0],[0,0,0],[0,0,0]]; 
 var htmlBoard = document.getElementsByClassName('cell');
 var xScore = document.getElementById('XplayerScoreDisplay');
@@ -34,7 +34,16 @@ function playerMove(row, col) {
       .then(function(data){
         htmlBoard[row*3+col].innerHTML = data.boardInsert;
       });
-      if(hasWon(board) || moveNr == 9)
+      console.log(board[0][0]);
+      fetch("/api/hasWonAPI/"+board[0][0]+"/"+board[0][1]+"/"+board[0][2]+"/"+board[1][0]+"/"+board[1][1]+"/"+board[1][2]+"/"+board[2][0]+"/"+board[2][1]+"/"+board[2][2])
+      .then(function(res){
+        return res.json();
+      })
+      .then(function(data){
+        console.log(data);
+        hasWon = data.hasWonAPI;
+      })
+      if(hasWon || moveNr == 9)
       {
         fetch("/api/reset")
         .then(function(res){
