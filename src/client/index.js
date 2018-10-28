@@ -2,19 +2,14 @@ const tictactoe = require("../logic/tictactoe");
 const setPlayerMove = require("../logic/setPlayerMove");
 var moveNr = 0;
 var hasWon = false;
-var board = [[0,0,0],[0,0,0],[0,0,0]]; 
+var board = [[0,0,0],[0,0,0],[0,0,0]];
+var resetButton = document.getElementById("resetButton");
 var htmlBoard = document.getElementsByClassName('cell');
 var xScore = document.getElementById('XplayerScoreDisplay');
 var yScore = document.getElementById('YplayerScoreDisplay');
 var playerTurnDisplay = document.getElementById('playerTurnDisplay');
 
-function fetchHasWon(board)
-{
-  
-}
-
-
-
+resetButton.addEventListener("click", function() {resetBoard();});
 htmlBoard[0].addEventListener("click", function() {playerMove(0, 0);});
 htmlBoard[1].addEventListener("click", function() {playerMove(0, 1);});
 htmlBoard[2].addEventListener("click", function() {playerMove(0, 2);});
@@ -47,17 +42,7 @@ async function playerMove(row, col) {
   });
       if( hasWon || moveNr == 9)
       {
-        fetch("/api/reset")
-        .then(function(res){
-          return res.json();
-        })
-        .then(function(data){
-          board = data.reset;
-          moveNr = 0;
-          for(var i = 0; i < 9; i++) {
-            htmlBoard[i].innerHTML = "";
-          }
-        });
+        await resetBoard();
         return;
       }
     setPlayerMove(playerTurnDisplay, moveNr);
@@ -65,4 +50,21 @@ async function playerMove(row, col) {
   else{
     return;
   }
+}
+
+
+
+function resetBoard()
+{
+  fetch("/api/reset")
+  .then(function(res){
+    return res.json();
+  })
+  .then(function(data){
+    board = data.reset;
+    moveNr = 0;
+    for(var i = 0; i < 9; i++) {
+      htmlBoard[i].innerHTML = "";
+    }
+  });
 }
