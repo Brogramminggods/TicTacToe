@@ -29,6 +29,7 @@ git push -u origin <branch_name>
 ```
 ##### And when you're ready to merge:
 Create a pull request on GitHub, or else...
+
 ![OrElse](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 ##### If you want to test the program and run it while testing on your local server, do the following:
 
