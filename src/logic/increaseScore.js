@@ -1,13 +1,11 @@
-var increaseScore = function(xScore, yScore, moveNr)
+var increaseScore = function(moveNr)
 {
     if((moveNr%2+1) == 1)
     {
-        yScore.innerHTML++;
-        return;
+        return 'O';
     }
     else{
-        xScore.innerHTML++;
-        return;
+        return 'X';
     }
 }
 module.exports = increaseScore;
