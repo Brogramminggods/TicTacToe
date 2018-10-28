@@ -16,3 +16,22 @@ describe("GET /api", () => {
     expect(res.body).toHaveProperty("error");
   });
 });
+
+describe("GET /api/boardInsert/2", () => {
+  it("should return 200 status code", async () => {
+    const res = await request(app).get("/api/boardInsert/2");
+    expect(res.status).toBe(200);
+    expect(res.body.boardInsert).toBe("O");
+  });
+});
+
+describe("GET /api/reset", () => {
+  it("should return 200 status code", async () => {
+    const res = await request(app).get("/api/reset");
+    expect(res.status).toBe(200);
+    expect(res.body.reset).toEqual([[0,0,0],
+                                    [0,0,0],
+                                    [0,0,0]]);
+  });
+});
+

@@ -1,7 +1,6 @@
 //const css = require('../css/app.css');
 const hasWon = require("../logic/hasWon");
 const tictactoe = require("../logic/tictactoe");
-//const resetWithFetch = require("..logic/tictactoe");
 const increaseScore = require("../logic/increaseScore");
 const setPlayerMove = require("../logic/setPlayerMove");
 
@@ -43,9 +42,7 @@ function playerMove(row, col) {
           return res.json();
         })
         .then(function(data){
-          console.log(data);
           board = data.reset;
-          console.log(board);
           moveNr = 0;
           for(var i = 0; i < 9; i++) {
             htmlBoard[i].innerHTML = "";
