@@ -34,25 +34,9 @@ function playerMove(row, col) {
       .then(function(data){
         htmlBoard[row*3+col].innerHTML = data.boardInsert;
       });
-      //reset();
-      if(hasWon(board))
+      if(hasWon(board) || moveNr == 9)
       {
         fetch("/api/reset")
-        .then(function(res){
-          return res.json();
-        })
-        .then(function(data){
-          board = data.reset;
-          moveNr = 0;
-          for(var i = 0; i < 9; i++) {
-            htmlBoard[i].innerHTML = "";
-          }
-        });
-      }
-      if(moveNr == 9)
-      {
-      alert("Players, your game ended in a draw");
-      fetch("/api/reset")
         .then(function(res){
           return res.json();
         })
