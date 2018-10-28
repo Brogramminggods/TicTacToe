@@ -76,10 +76,12 @@ workflows:
           
       - test:
           requires:
+            - build
             - staging
 
       - deploy:
           requires:
+            - build
             - test
           filters:
             branches:
