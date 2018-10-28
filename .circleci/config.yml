@@ -69,19 +69,19 @@ workflows:
   build-staging:
     jobs:
       - build
-      - staging:
+      - build-staging:
           requires:
           - build
   test:
     jobs:
       - test:
           requires:
-            build-staging;
+            - build-staging
   build-deploy:
     jobs:
       - deploy:
           requires:
-            - build
+            - test
           filters:
             branches:
               only: master
