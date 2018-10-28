@@ -1,18 +1,15 @@
-//const css = require('../css/app.css');
-const hasWon = require("../logic/hasWon");
 const tictactoe = require("../logic/tictactoe");
-//const resetWithFetch = require("..logic/tictactoe");
-const increaseScore = require("../logic/increaseScore");
 const setPlayerMove = require("../logic/setPlayerMove");
-
 var moveNr = 0;
-var board = [[0,0,0],[0,0,0],[0,0,0]]; 
+var hasWon = false;
+var board = [[0,0,0],[0,0,0],[0,0,0]];
+var resetButton = document.getElementById("resetButton");
 var htmlBoard = document.getElementsByClassName('cell');
 var xScore = document.getElementById('XplayerScoreDisplay');
 var yScore = document.getElementById('YplayerScoreDisplay');
 var playerTurnDisplay = document.getElementById('playerTurnDisplay');
 
-
+resetButton.addEventListener("click", function() {resetBoard();});
 htmlBoard[0].addEventListener("click", function() {playerMove(0, 0);});
 htmlBoard[1].addEventListener("click", function() {playerMove(0, 1);});
 htmlBoard[2].addEventListener("click", function() {playerMove(0, 2);});
@@ -23,8 +20,8 @@ htmlBoard[6].addEventListener("click", function() {playerMove(2, 0);});
 htmlBoard[7].addEventListener("click", function() {playerMove(2, 1);});
 htmlBoard[8].addEventListener("click", function() {playerMove(2, 2);});
 
-function playerMove(row, col) {
-  var moveMade = tictactoe(row, col, board, moveNr);
+async function playerMove(row, col) {
+  var moveMade = tictactoe(row, col, board, moveNr);   //We could not figure out how to do this with API :$
   if(moveMade == true)
   {
     moveNr++;
@@ -35,41 +32,54 @@ function playerMove(row, col) {
       .then(function(data){
         htmlBoard[row*3+col].innerHTML = data.boardInsert;
       });
-      //reset();
-      if(hasWon(board))
+      await fetch("/api/hasWonAPI/"+board[0][0]+"/"+board[0][1]+"/"+board[0][2]+"/"+board[1][0]+"/"+board[1][1]+"/"+board[1][2]+"/"+board[2][0]+"/"+board[2][1]+"/"+board[2][2])
+      .then(function(res){
+      return res.json();
+      })
+      .then(function(data){
+        hasWon = data.hasWonAPI;
+      });
+      if( hasWon || moveNr == 9)
       {
-        fetch("/api/reset")
-        .then(function(res){
-          return res.json();
-        })
-        .then(function(data){
-          console.log(data);
-          board = data.reset;
-          console.log(board);
-          moveNr = 0;
-          for(var i = 0; i < 9; i++) {
-            htmlBoard[i].innerHTML = "";
-          }
-        });
+        await resetBoard();
+        if(moveNr != 9)
+        {
+          fetch("/api/increaseScore/" + moveNr)
+          .then(function(res){
+            return res.json();
+          })
+          .then(function(data){
+            if(data.increaseScore === 'X')
+            {
+              xScore.innerHTML++;
+            }
+            else{
+              yScore.innerHTML++;
+            }
+          })
+        }
+        return;
       }
-      if(moveNr == 9)
-      {
-      alert("Players, your game ended in a draw");
-      fetch("/api/reset")
-        .then(function(res){
-          return res.json();
-        })
-        .then(function(data){
-          board = data.reset;
-          moveNr = 0;
-          for(var i = 0; i < 9; i++) {
-            htmlBoard[i].innerHTML = "";
-          }
-        });
-      }
-    setPlayerMove(playerTurnDisplay, moveNr);
+    setPlayerMove(playerTurnDisplay, moveNr); //just html manipulation turns x -> y and y->x
 }
   else{
     return;
   }
+}
+
+
+
+function resetBoard()
+{
+  fetch("/api/reset")
+  .then(function(res){
+    return res.json();
+  })
+  .then(function(data){
+    board = data.reset;
+    moveNr = 0;
+    for(var i = 0; i < 9; i++) {
+      htmlBoard[i].innerHTML = "";
+    }
+  });
 }

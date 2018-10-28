@@ -8,7 +8,6 @@ if(board[row][col] === 0){
         // O's move
         board[row][col] = 2;
     }
-    moveNr++;
     return true;
 }
     return false;
