@@ -24,6 +24,20 @@ describe("GET /api/boardInsert/2", () => {
     expect(res.body.boardInsert).toBe("O");
   });
 });
+describe("GET /api/hasWonAPI", () => {
+  it("should return 200 status code", async () => {
+    const res = await request(app).get("/api/hasWonAPI/1/0/0/0/1/1/0/1/0");
+    expect(res.status).toBe(200);
+    expect(res.body.hasWonAPI).toBe(false);
+  });
+});
+describe("GET /api/hasWonAPI", () => {
+  it("should return 200 status code", async () => {
+    const res = await request(app).get("/api/hasWonAPI/1/1/1/0/0/0/0/1/1");
+    expect(res.status).toBe(200);
+    expect(res.body.hasWonAPI).toBe(true);
+  });
+});
 
 describe("GET /api/reset", () => {
   it("should return 200 status code", async () => {
