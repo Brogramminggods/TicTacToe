@@ -51,7 +51,7 @@ jobs:
   test:
     docker:
       # specify the version you desire here
-      - image: circleci/node:latest-browsers:8.12
+      - image: circleci/node:latest-browsers
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
