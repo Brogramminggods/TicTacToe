@@ -3,46 +3,46 @@ const setPlayerMove = require("../logic/setPlayerMove");
 var moveNr = 0;
 var hasWon = false;
 var board = [[0,0,0],[0,0,0],[0,0,0]];
-var resetButton = document.getElementById("resetButton");
-var htmlBoard = document.getElementsByClassName('cell');
-var xScore = document.getElementById('XplayerScoreDisplay');
-var yScore = document.getElementById('YplayerScoreDisplay');
+var resetButton = document.getElementById("resetButton");     //The reset button element
+var htmlBoard = document.getElementsByClassName('cell');      //This is the TicTacToe HTML board
+var xScore = document.getElementById('XplayerScoreDisplay');  //This is the element that keeps score for X
+var yScore = document.getElementById('YplayerScoreDisplay');  //This is the element that keeps score for Y
 var playerTurnDisplay = document.getElementById('playerTurnDisplay');
 
-resetButton.addEventListener("click", function() {resetBoard();});
-htmlBoard[0].addEventListener("click", function() {playerMove(0, 0);});
-htmlBoard[1].addEventListener("click", function() {playerMove(0, 1);});
-htmlBoard[2].addEventListener("click", function() {playerMove(0, 2);});
-htmlBoard[3].addEventListener("click", function() {playerMove(1, 0);});
+resetButton.addEventListener("click", function() {resetBoard();});      //Event Listener for the reset button
+htmlBoard[0].addEventListener("click", function() {playerMove(0, 0);}); //Event listener for every field in the
+htmlBoard[1].addEventListener("click", function() {playerMove(0, 1);}); //Tic tac toe field 
+htmlBoard[2].addEventListener("click", function() {playerMove(0, 2);}); //The prior number stands for row
+htmlBoard[3].addEventListener("click", function() {playerMove(1, 0);}); //the latter stands for collum
 htmlBoard[4].addEventListener("click", function() {playerMove(1, 1);});
 htmlBoard[5].addEventListener("click", function() {playerMove(1, 2);});
 htmlBoard[6].addEventListener("click", function() {playerMove(2, 0);});
 htmlBoard[7].addEventListener("click", function() {playerMove(2, 1);});
 htmlBoard[8].addEventListener("click", function() {playerMove(2, 2);});
 
-async function playerMove(row, col) {
+async function playerMove(row, col) {                  //We have this Async so we can await the fetch requests
   var moveMade = tictactoe(row, col, board, moveNr);   //We could not figure out how to do this with API :$
-  if(moveMade == true)
+  if(moveMade == true)                                 
   {
-    moveNr++;
-      fetch("/api/boardInsert/"+moveNr)
-      .then(function(res){
+    moveNr++;                                          //increase the move
+      fetch("/api/boardInsert/"+moveNr)                //Insert into the html board
+      .then(function(res){ 
         return res.json();
       })
       .then(function(data){
         htmlBoard[row*3+col].innerHTML = data.boardInsert;
-      });
+      });     //
       await fetch("/api/hasWonAPI/"+board[0][0]+"/"+board[0][1]+"/"+board[0][2]+"/"+board[1][0]+"/"+board[1][1]+"/"+board[1][2]+"/"+board[2][0]+"/"+board[2][1]+"/"+board[2][2])
-      .then(function(res){
+      .then(function(res){    //This fetch logic returns true if either player has won
       return res.json();
       })
       .then(function(data){
         hasWon = data.hasWonAPI;
       });
-      if( hasWon || moveNr == 9)
+      if( hasWon || moveNr == 9)  //if it is a draw or either player won we go into this if statement
       {
-        await resetBoard();
-        if(moveNr != 9)
+        await resetBoard();       //reset the board
+        if(moveNr != 9)           //if either player won, we incrament their score
         {
           fetch("/api/increaseScore/" + moveNr)
           .then(function(res){
@@ -60,7 +60,7 @@ async function playerMove(row, col) {
         }
         return;
       }
-    setPlayerMove(playerTurnDisplay, moveNr); //just html manipulation turns x -> y and y->x
+    setPlayerMove(moveNr); //just html manipulation turns x -> y and y->x
 }
   else{
     return;
@@ -69,7 +69,7 @@ async function playerMove(row, col) {
 
 
 
-function resetBoard()
+function resetBoard()   //this resets the tictactoe board, both the html and the invisible one
 {
   fetch("/api/reset")
   .then(function(res){

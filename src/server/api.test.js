@@ -48,4 +48,11 @@ describe("GET /api/reset", () => {
                                     [0,0,0]]);
   });
 });
+describe("GET /api/increaseScore", () => {
+  it("should return 200 status code", async () => {
+    const res = await request(app).get("/api/increaseScore/1");
+    expect(res.status).toBe(200);
+    expect(res.body.increaseScore).toBe("X");
+  });
+});
 
