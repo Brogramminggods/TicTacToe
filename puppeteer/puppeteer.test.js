@@ -17,6 +17,6 @@ describe("puppeteer testing", () => {
   test("Page title is 'TICTACTOE'", async () => {
     const response = await page.goto(url);
     const pageTitle = await page.title();
-    expect(pageTitle).toBe('TICTACTOE');
+    expect(pageTitle).toBe('tom');
   });
 });
