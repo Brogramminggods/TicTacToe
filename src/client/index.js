@@ -21,10 +21,9 @@ htmlBoard[7].addEventListener("click", function() {playerMove(2, 1);});
 htmlBoard[8].addEventListener("click", function() {playerMove(2, 2);});
 
 async function playerMove(row, col) {
-  var moveMade = tictactoe(row, col, board, moveNr);
+  var moveMade = tictactoe(row, col, board, moveNr);   //We could not figure out how to do this with API :$
   if(moveMade == true)
   {
-    console.log(hasWon);
     moveNr++;
       fetch("/api/boardInsert/"+moveNr)
       .then(function(res){
@@ -33,19 +32,35 @@ async function playerMove(row, col) {
       .then(function(data){
         htmlBoard[row*3+col].innerHTML = data.boardInsert;
       });
-  await fetch("/api/hasWonAPI/"+board[0][0]+"/"+board[0][1]+"/"+board[0][2]+"/"+board[1][0]+"/"+board[1][1]+"/"+board[1][2]+"/"+board[2][0]+"/"+board[2][1]+"/"+board[2][2])
-  .then(function(res){
-    return res.json();
-  })
-  .then(function(data){
-    hasWon = data.hasWonAPI;
-  });
+      await fetch("/api/hasWonAPI/"+board[0][0]+"/"+board[0][1]+"/"+board[0][2]+"/"+board[1][0]+"/"+board[1][1]+"/"+board[1][2]+"/"+board[2][0]+"/"+board[2][1]+"/"+board[2][2])
+      .then(function(res){
+      return res.json();
+      })
+      .then(function(data){
+        hasWon = data.hasWonAPI;
+      });
       if( hasWon || moveNr == 9)
       {
         await resetBoard();
+        if(moveNr != 9)
+        {
+          fetch("/api/increaseScore/" + moveNr)
+          .then(function(res){
+            return res.json();
+          })
+          .then(function(data){
+            if(data.increaseScore === 'X')
+            {
+              xScore.innerHTML++;
+            }
+            else{
+              yScore.innerHTML++;
+            }
+          })
+        }
         return;
       }
-    setPlayerMove(playerTurnDisplay, moveNr);
+    setPlayerMove(playerTurnDisplay, moveNr); //just html manipulation turns x -> y and y->x
 }
   else{
     return;
