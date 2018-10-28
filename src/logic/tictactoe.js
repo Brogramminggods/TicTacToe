@@ -1,4 +1,4 @@
-var tictactoe = function tictactoe(row, col, board, htmlBoard, moveNr){
+var tictactoe = function tictactoe(row, col, board, moveNr){
 if(board[row][col] === 0){
     if(moveNr % 2 === 0) {
         // X's move

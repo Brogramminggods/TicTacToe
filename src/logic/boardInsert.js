@@ -1,11 +1,11 @@
 // ./src/logic/boardInsert.js
 
-function boardInsert(row, col, htmlBoard, moveNr) {
+function boardInsert(moveNr) {
     if((moveNr%2)+1 === 1){ 
-    htmlBoard[((row * 3) + col)].innerHTML = "O";
+    return "O";
     }
     else{
-    htmlBoard[((row * 3) + col)].innerHTML = "X";  
+    return "X";  
     }  
 }
 
