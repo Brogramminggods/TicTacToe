@@ -7,7 +7,6 @@ var resetButton = document.getElementById("resetButton");     //The reset button
 var htmlBoard = document.getElementsByClassName('cell');      //This is the TicTacToe HTML board
 var xScore = document.getElementById('XplayerScoreDisplay');  //This is the element that keeps score for X
 var yScore = document.getElementById('YplayerScoreDisplay');  //This is the element that keeps score for Y
-var playerTurnDisplay = document.getElementById('playerTurnDisplay');
 
 resetButton.addEventListener("click", function() {resetBoard();});      //Event Listener for the reset button
 htmlBoard[0].addEventListener("click", function() {playerMove(0, 0);}); //Event listener for every field in the
@@ -21,9 +20,13 @@ htmlBoard[7].addEventListener("click", function() {playerMove(2, 1);});
 htmlBoard[8].addEventListener("click", function() {playerMove(2, 2);});
 
 async function playerMove(row, col) {                  //We have this Async so we can await the fetch requests
+  
   var moveMade = tictactoe(row, col, board, moveNr);   //We could not figure out how to do this with API :$
   if(moveMade == true)                                 
   {
+    if(moveNr == 9 || hasWon == true){
+      return;
+    }
     moveNr++;                                          //increase the move
       fetch("/api/boardInsert/"+moveNr)                //Insert into the html board
       .then(function(res){ 
@@ -41,7 +44,6 @@ async function playerMove(row, col) {                  //We have this Async so w
       });
       if( hasWon || moveNr == 9)  //if it is a draw or either player won we go into this if statement
       {
-        await resetBoard();       //reset the board
         if(moveNr != 9)           //if either player won, we incrament their score
         {
           fetch("/api/increaseScore/" + moveNr)

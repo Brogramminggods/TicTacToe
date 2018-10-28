@@ -14,14 +14,6 @@ module.exports = {
 		}),
 		new CleanWebpackPlugin(['dist'])
 	],
-	module: {
-		rules: [
-		  {
-			test: /\.css$/,
-			use: [ 'style-loader', 'css-loader' ]
-		  }
-		]
-	  },
 	devServer: {
 		port: 3000,
 		open: true,
