@@ -9,27 +9,17 @@
 
 ## Admin Setup
 #### When you set up for the first time:
-##### Go to your command terminal and do the following:
+##### Fork the project to your profile on GitHub, go to the desired folder you want it to be in and go to your command terminal and do the following:
 
 ```
-git clone git@github.com:Brogramminggods/TicTacToe.git
+git clone git@github.com:YOUR-USERNAME/TicTacToe.git
 
 cd TicTacToe
 
 npm install
 ```
 #### Now that you've got things set up on your computer, you can change things whenever at will.
-#### If you want to make any changes to the project, you should do so by creating a branch, working on the branch, and then create a pull request where another team member will have to review and accept the request.
-##### To create a new branch, do the following:
 
-```
-git checkout -b <branch_name>
-
-git push -u origin <branch_name>
-```
-##### And when you're ready to merge:
-Create a pull request on GitHub, or else...
-![OrElse](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
 ##### If you want to get the program running on your local server, do the following:
 
 ```
@@ -39,16 +29,10 @@ npm start
 ```
 ##### If you want the program to run on the Heroku server, do the following:
 ###### First you'll need to have an account on Heroku, if you don't have one, go to heroku.com and create One! You'll also need to download Heroku CLI on your computer, then do the following:
-
-```
-heroku login
-
-heroku git:remote -a brogramminggods
-```
 ###### To add Heroku as a git remote repository that you can push to, do the following:
 
 ```
-git push heroku <branch_name> to heroku master
+heroku create
 
 git push heroku master
 ```
