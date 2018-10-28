@@ -47,7 +47,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
+  
+  test:
+    docker:
+      - image: buildpack-deps:trusty
+    steps:    
       # run tests!
       - run: npm test
     
@@ -68,6 +72,14 @@ workflows:
       - staging:
           requires:
           - build
+  test:
+    jobs:
+      - build
+      - test:
+          requires:
+            build-staging;
+      
+      
   build-deploy:
     jobs:
       - build
