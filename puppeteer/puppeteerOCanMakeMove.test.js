@@ -1,4 +1,4 @@
-  // ./puppeteer/puppeteerTest.js
+  // ./puppeteer/puppeteerOCanMakeMove.js
 const puppeteer = require("puppeteer");
 
 describe("puppeteer testing", () => {
@@ -16,13 +16,21 @@ describe("puppeteer testing", () => {
 
   test("O move is accounted for", async () => {
     const response = await page.goto(url);
+    await page.waitFor(300);    //API catch up
+
+    //X plays on cell zero, O plays on cell 1
     await page.click('#zero');
+    await page.waitFor(50);    //API catch up
     await page.click('#one');
-    await page.waitFor(350);
-    const element = await page.$("#one");
+
+    await page.waitFor(300); //API catch upp
+    
+    //Getting contents of one
+    const element = await page.$("#one"); //O should have played this cell
     const text = await (await element.getProperty('textContent')).jsonValue();
+
     expect(text).toBe('O');
-  });
+  }, 10000);
 });
 
 
