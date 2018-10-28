@@ -1,16 +1,16 @@
-## Development manual
-Welcome to the TicTacToe team! We're glad to have you on board.
+## Development Manual
+#### Welcome! Here's what you need to do to get the program to build.
+###### You'll need to have an account on GitHub, if you don't have one, go to github.com and create one!
+###### You'll also need:
+* Git	version 2.19.1 or later
+* Node	version 8.12.0 or later
+* npm	version 6.04.1 or later
+* And a text editor to work on the code, we recommend Visual Studio Code
 
-First things first, make sure you have the following development tools up to date:
 ## Dev Setup
-#### Dev environment
-* Git  version >= 2.19.1
-* Node version >= 8.12.0
-* npm  version >= 6.04.1
-* And a text editor of choice
+#### For first time setup:
+##### Go to your command terminal and do the following:
 
-
-#### For first time setup perform:
 ```
 git clone git@github.com:Brogramminggods/TicTacToe.git
 
@@ -18,22 +18,52 @@ cd TicTacToe
 
 npm install
 ```
-#### When running the web app:
+#### Now that you've got things set up on your computer, you can change things whenever at will.
+##### If you want to make any changes to the project, you should do so by creating a branch, working on the branch, and the create a pull request where another team member will have to review and accept the request.
+##### To create a new branch, do the following:
+
+```
+git checkout -b <branch_name>
+
+git push -u origin <branch_name>
+```
+##### And when you're ready to merge:
+Create a pull request on GitHub, or else...
+![OrElse](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
+##### If you want to test the program and run it while testing:
+
 ```
 npm run build
 
 npm run devserver
 ```
-Making changes to the code while running devserver will be immediately visible on the local port. Try it!
+###### Making changes to the code while running devserver will be immediately visible on the local port. Try it!
+##### If you want to get the program running on your local server, do the following:
 
-## Git branching 
-#### Creating a new branch:
 ```
-git checkout -b <your_branch_name>
+npm run build
 
-git push -u origin <your_branch_name>
+npm start
 ```
-#### And when you're ready to merge:
-Create a pull request on GitHub, or else...
-![OrElse](https://media.giphy.com/media/cFkiFMDg3iFoI/giphy.gif)
+##### If you want the program to run on the Heroku server, do the following:
+###### First you'll need to have an account on Heroku, if you don't have one, go to heroku.com and create One! You'll also need to download Heroku CLI on your computer, then do the following:
+
 ```
+heroku login
+
+heroku git:remote -a brogramminggods
+```
+###### To add Heroku as a git remote repository that you can push to, do the following:
+
+```
+git push heroku <branch_name> to heroku master
+
+git push heroku master
+```
+
+
+
+
+
+
+
