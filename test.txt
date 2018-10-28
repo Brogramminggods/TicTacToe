@@ -1,3 +1,0 @@
-Testing on a new branch
-Testing pdf
-Testing html
