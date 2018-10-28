@@ -1,5 +1,4 @@
 // ./src/logic/hasWon.js
-
 function hasWon(board) {	
 	/** Assuming the default value is 0 and Array[col][row]*/
 	// Vertical win conditions 
