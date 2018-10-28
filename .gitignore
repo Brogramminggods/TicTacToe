@@ -7,3 +7,6 @@ Late-term-Assignment-1.pdf
 
 # Webpack files
 /dist
+
+# testCoverageResults
+/docs/testCoverage

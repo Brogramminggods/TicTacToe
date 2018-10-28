@@ -20,6 +20,10 @@
   "bugs": {
     "url": "https://github.com/Brogramminggods/TicTacToe/issues"
   },
+  "jest": {
+	"collectCoverage": true,
+    "coverageDirectory": "./docs/testCoverage" 
+  },
   "homepage": "https://github.com/Brogramminggods/TicTacToe#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
