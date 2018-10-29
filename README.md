@@ -170,5 +170,8 @@ heroku local
 
 
 #### What we did not do from the project description
-We did everything asked appart from doing two build targets. We only did 1 :( 
-( That is if we did everything well enough )!
+We did everything asked appart from maybe not doing two build targets, 
+
+The first build target is that when npm test is called. it returns an overview of the testing for every single folder/file, saying what could be tested better etc. 
+
+The second "build target" was github related, we created a webhook so that when some git commands are called, it will make a file with the commit story.
