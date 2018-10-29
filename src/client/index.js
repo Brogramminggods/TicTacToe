@@ -46,7 +46,7 @@ async function playerMove(row, col) {                  //We have this Async so w
       {
         if(moveNr != 9)           //if either player won, we incrament their score
         {
-          fetch("/api/increaseScore/" + moveNr)
+          await fetch("/api/increaseScore/" + moveNr)
           .then(function(res){
             return res.json();
           })
@@ -81,6 +81,7 @@ function resetBoard()   //this resets the tictactoe board, both the html and the
     board = data.reset;
     moveNr = 0;
     hasWon = false;
+    setPlayerMove(moveNr);
     for(var i = 0; i < 9; i++) {
       htmlBoard[i].innerHTML = "";
     }
