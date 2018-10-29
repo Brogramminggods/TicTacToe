@@ -169,6 +169,6 @@ heroku local
 -  [x] Continuous Delivery!
 
 
-//What we did not do from the 
+#### What we did not do from the project description
 We did everything asked appart from doing two build targets. We only did 1 :( 
 ( That is if we did everything well enough )!
