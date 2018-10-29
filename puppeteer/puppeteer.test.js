@@ -4,12 +4,9 @@ const puppeteer = require("puppeteer");
 describe("puppeteer testing", () => {
   let browser, page;
   let url = "https://brogramminggods.herokuapp.com/";
-  const options = {
-	  timeout: 500
-  }
 
   beforeEach(async () => {
-    browser = await puppeteer.launch({headless: false, slowMo: 0});
+    browser = await puppeteer.launch({ headless: true, slowMo: 0 });
     page = await browser.newPage();
   });
 
@@ -26,47 +23,44 @@ describe("puppeteer testing", () => {
   test("X move is accounted for", async () => {
     await page.goto(url, {waitUntil: 'networkidle0'});
     await page.click('#zero');
-    await page.waitForSelector('#zero', options);
-	await page.waitFor(500);
+    await page.waitFor(350);
     const element = await page.$("#zero");
     const text = await (await element.getProperty('textContent')).jsonValue();
-    expect(text).toBe("X");
+    expect(text).toBe('X');
   });
   
   test("O move is accounted for", async () => {
-    await page.goto(url, {waitUntil: 'networkidle0'});
+    const response = await page.goto(url, {waitUntil: 'networkidle0'});
     await page.click('#zero');
-    await page.waitForSelector('#zero', options);
+    await page.waitFor(350);
     await page.click('#one');
-    await page.waitForSelector('#one', options);
-	await page.waitFor(500);
+    await page.waitFor(350);
     const element = await page.$("#one");
     const text = await (await element.getProperty('textContent')).jsonValue();
-    expect(text).toBe("O");
+    expect(text).toBe('O');
   });
   
   test("X wins a game", async () => {
-    await page.goto(url, {waitUntil: 'networkidle0'});
+    const response = await page.goto(url, {waitUntil: 'networkidle2'});
 
     await page.click('#zero');
-    await page.waitForSelector('#zero', options);
+    await page.waitFor(350);
 
     await page.click('#one');
-    await page.waitForSelector('#one', options);
+    await page.waitFor(350);
 
     await page.click('#three');
-    await page.waitForSelector('#three', options);
+    await page.waitFor(350);
  
     await page.click('#four');
-    await page.waitForSelector('#four', options);
+    await page.waitFor(350);
   
     await page.click('#six'); 
-    await page.waitForSelector('#six', options);
-	await page.waitFor(1000);
-    
-	const element = await page.$("#XplayerScoreDisplay");
-    const text = await (await element.getProperty('textContent')).jsonValue();
+    await page.waitFor(500);
 
-    expect(text).toBe("1");
+  const element = await page.$("#XplayerScoreDisplay");
+  const text = await (await element.getProperty('textContent')).jsonValue();
+
+    expect(text).toBe('1');
   });
 });
