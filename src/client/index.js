@@ -1,5 +1,6 @@
 const tictactoe = require("../logic/tictactoe");
 const setPlayerMove = require("../logic/setPlayerMove");
+const victoryMessage = require("../logic/victoryMessage");
 var moveNr = 0;
 var hasWon = false;
 var board = [[0,0,0],[0,0,0],[0,0,0]];
@@ -59,6 +60,7 @@ async function playerMove(row, col) {                  //We have this Async so w
               yScore.innerHTML++;
             }
           })
+        victoryMessage(moveNr);
         }
         return;
       }
@@ -80,6 +82,7 @@ function resetBoard()   //this resets the tictactoe board, both the html and the
   .then(function(data){
     board = data.reset;
     moveNr = 0;
+    setPlayerMove(moveNr);
     hasWon = false;
     for(var i = 0; i < 9; i++) {
       htmlBoard[i].innerHTML = "";
