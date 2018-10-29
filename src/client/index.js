@@ -80,6 +80,7 @@ function resetBoard()   //this resets the tictactoe board, both the html and the
   .then(function(data){
     board = data.reset;
     moveNr = 0;
+    hasWon = false;
     for(var i = 0; i < 9; i++) {
       htmlBoard[i].innerHTML = "";
     }
