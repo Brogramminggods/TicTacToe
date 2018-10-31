@@ -1,0 +1,903 @@
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Tue Oct 30 08:34:46 2018 +0000
+
+    Delete testCoverageTndex.html.lnk
+
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Mon Oct 29 02:12:52 2018 +0000
+
+    Update README.md
+
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Mon Oct 29 02:04:34 2018 +0000
+
+    Create index.md
+    
+    Testing out github pages
+
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Mon Oct 29 02:03:40 2018 +0000
+
+    Update README.md
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 29 01:44:14 2018 +0000
+
+    readme TODO updated
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 29 01:17:19 2018 +0000
+
+    very minor change to solve merge
+
+Merge: cb06427 559426f
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 29 01:16:48 2018 +0000
+
+    Merge branch 'master' of github.com:Brogramminggods/TicTacToe
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 29 01:16:39 2018 +0000
+
+    some functionality added
+
+Merge: 2d99625 96bcdea
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Mon Oct 29 01:13:41 2018 +0000
+
+    Merge pull request #36 from Brogramminggods/puppeteer
+    
+    Puppeteer
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Mon Oct 29 01:05:29 2018 +0000
+
+    Puppeteer: more explisit wating
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Mon Oct 29 01:01:28 2018 +0000
+
+    Puppeteer: less explisit wating
+
+Merge: 0525d45 3b5aabb
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Mon Oct 29 00:46:44 2018 +0000
+
+    Merge pull request #35 from Brogramminggods/DatabaseShananigans
+    
+    fixed a small bug in index.js
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Mon Oct 29 00:44:04 2018 +0000
+
+    ...
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 29 00:34:31 2018 +0000
+
+    fixed a small bug in index.js
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Mon Oct 29 00:06:56 2018 +0000
+
+    Puppeteer: posibly flaky test
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Mon Oct 29 00:02:12 2018 +0000
+
+    one line in index.js
+
+Merge: e013e46 9426a18
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Sun Oct 28 23:00:53 2018 +0000
+
+    Merge pull request #34 from Brogramminggods/creating_docs
+    
+    Creating docs
+
+Merge: dd9b45d e013e46
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 22:53:11 2018 +0000
+
+    Merge branch 'master' of github.com:Brogramminggods/TicTacToe into creating_docs
+
+Merge: 1c59875 adf3ba6
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Sun Oct 28 22:52:46 2018 +0000
+
+    Merge pull request #33 from Brogramminggods/HtmlMagic
+    
+    Removed unintentional css include and made it so the board doesn't re…
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 22:52:02 2018 +0000
+
+    finished development manual
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 22:50:52 2018 +0000
+
+    finished administration manual
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 22:41:57 2018 +0000
+
+    Removed unintentional css include and made it so the board doesn't refresh automatically
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 22:28:56 2018 +0000
+
+    finished Dev manual
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 22:28:01 2018 +0000
+
+    finished Admin manual
+
+Merge: 3ceec02 4eeedb4
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Sun Oct 28 22:12:41 2018 +0000
+
+    Merge pull request #30 from Brogramminggods/last_one
+    
+    All changes will be pushed to hreroku staging
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 22:06:03 2018 +0000
+
+    CricleCI: all branches will now force push to staging
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 21:53:56 2018 +0000
+
+    commented code and added a few tests
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 21:52:55 2018 +0000
+
+    Test coverage overveirw will appear in ./docs folder after test
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 21:34:34 2018 +0000
+
+    CircleCI: config streamlining
+
+Merge: 6cfa9d6 0d2eeec
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Sun Oct 28 20:43:53 2018 +0000
+
+    Merge pull request #27 from Brogramminggods/ApiTests
+    
+    Api tests
+
+Merge: 48b05a2 6cfa9d6
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 20:39:36 2018 +0000
+
+    Merge branch 'master' of github.com:Brogramminggods/TicTacToe into ApiTests
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sun Oct 28 20:36:19 2018 +0000
+
+    Design report added
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 20:27:09 2018 +0000
+
+    Added x-score, y-score
+
+Merge: ac7da3a 208b9f8
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Sun Oct 28 19:07:09 2018 +0000
+
+    Merge pull request #24 from Brogramminggods/ApiTests
+    
+    Api tests
+
+Merge: e68a0fc 05e556a
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 19:04:53 2018 +0000
+
+    Merge branch 'ApiTests' of github.com:Brogramminggods/TicTacToe into ApiTests
+
+Merge: bc69f2b ac7da3a
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Sun Oct 28 18:58:28 2018 +0000
+
+    Merge pull request #23 from Brogramminggods/master
+    
+    Bunch of logic moved from being static to using API
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 18:55:21 2018 +0000
+
+    Reset button now works
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 18:50:37 2018 +0000
+
+    refactored to work
+
+Merge: 9bb965f 96f9a53
+Author: saemundur <34029692+saemundur@users.noreply.github.com>
+Date:   Sun Oct 28 18:49:35 2018 +0000
+
+    Merge pull request #22 from Brogramminggods/sripts
+    
+    Heroku Staging -> production
+    Wowie now we have end to end testing! Excellent code as always, my dude
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 18:35:39 2018 +0000
+
+    CircleCI: config update5
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 18:22:24 2018 +0000
+
+    Broke puppeteer test to ensure CircleCI will fail
+
+Merge: c153036 46d92a0
+Author: stofiRU <43612102+stofiRU@users.noreply.github.com>
+Date:   Sun Oct 28 18:20:53 2018 +0000
+
+    Merge pull request #21 from Brogramminggods/creating_docs
+    
+    Creating docs
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 18:16:27 2018 +0000
+
+    CircleCI: config update4
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 18:15:44 2018 +0000
+
+    deleted Design report, new one is coming
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 17:49:39 2018 +0000
+
+    CircleCI: config update3
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 17:43:07 2018 +0000
+
+    CircleCI: config update2
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 17:38:47 2018 +0000
+
+    Administration and Development manual getting there...
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 17:37:02 2018 +0000
+
+    CircleCI: config update
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 17:31:02 2018 +0000
+
+    Rudementary puppeteer test
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 17:06:48 2018 +0000
+
+    additional tests written for hasWonAPI done, and passed
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 17:00:42 2018 +0000
+
+    Both API tests for hasWonAPI made and passed
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:56:16 2018 +0000
+
+    CircleCI: another potential config fix
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 16:55:06 2018 +0000
+
+    hasWon is not static, but connected to API now
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:47:11 2018 +0000
+
+    CircleCI: potential config fix
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:43:16 2018 +0000
+
+    CircleCI: potential config breakthough
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sun Oct 28 16:42:29 2018 +0000
+
+    a little fix in the Administration manual
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:39:49 2018 +0000
+
+    CircleCI: still more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:28:02 2018 +0000
+
+    CircleCI: alot more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:11:23 2018 +0000
+
+    CircleCI: even more config tweeks
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 16:08:07 2018 +0000
+
+    refactored
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:06:49 2018 +0000
+
+    CircleCI: yet more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 16:00:28 2018 +0000
+
+    CircleCI: more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 15:53:07 2018 +0000
+
+    CircleCI: more config preps for Puppeteer
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 15:41:03 2018 +0000
+
+    Supertests for reset and insert made
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 28 15:39:03 2018 +0000
+
+    CircleCI: config prepp for Puppeteer
+
+Merge: cbed050 bc69f2b
+Author: saemundur <34029692+saemundur@users.noreply.github.com>
+Date:   Sun Oct 28 14:27:15 2018 +0000
+
+    Merge pull request #20 from Brogramminggods/AddingAPI
+    
+    Adding api
+    Great move's Baldur, keep it up!
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sun Oct 28 00:15:41 2018 +0000
+
+    Reset moved from main.js to API logic, tests added aswell
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sat Oct 27 23:41:55 2018 +0000
+
+    Moved boardInsert from main.js to API
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sat Oct 27 20:38:05 2018 +0000
+
+    created Administration manual
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sat Oct 27 18:29:57 2018 +0000
+
+    created Design report
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Sat Oct 27 18:26:16 2018 +0000
+
+    created docs folder and imported Development manual
+
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Sat Oct 27 18:09:18 2018 +0000
+
+    README: now reflects my metal state after getting Heroku and CircleCI to play nicely
+
+Merge: 4d0770b 6586867
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Fri Oct 26 19:52:44 2018 +0000
+
+    Merge pull request #19 from Brogramminggods/more_heroku
+    
+    README: unboked last link edit
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 19:51:53 2018 +0000
+
+    README: unboked last link edit
+
+Merge: 5eba31d a844a1b
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Fri Oct 26 19:45:36 2018 +0000
+
+    Merge pull request #18 from Brogramminggods/more_heroku
+    
+    HTML/CSS: reverting bacround coulour to black
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 19:44:20 2018 +0000
+
+    HTML/CSS: reverting bacround coulour to black
+
+Merge: c1a7d85 2f2e168
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Fri Oct 26 19:41:11 2018 +0000
+
+    Merge pull request #17 from Brogramminggods/more_heroku
+    
+    More heroku
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 18:50:10 2018 +0000
+
+    CircleCI: more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 18:43:38 2018 +0000
+
+    CircleCI: yet more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 18:35:34 2018 +0000
+
+    CircleCI: some more config tweeks
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 18:28:31 2018 +0000
+
+    CircleCI: reverting back to an older aproach
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 17:20:16 2018 +0000
+
+    CircleCI: new config aproach and small README link fix
+
+Merge: 37d4083 a362db7
+Author: danielmar18 <33004159+danielmar18@users.noreply.github.com>
+Date:   Fri Oct 26 16:57:09 2018 +0000
+
+    Merge pull request #16 from Brogramminggods/more_heroku
+    
+    CircleCI: heroku intigration atemt 2
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 16:44:03 2018 +0000
+
+    CircleCI: heroku intigration atemt 2
+
+Merge: 3a1b5e0 a372185
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Fri Oct 26 16:38:45 2018 +0000
+
+    Merge pull request #15 from Brogramminggods/more_heroku
+    
+    CircleCI: Heroku integration and pink backgroud
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 16:36:28 2018 +0000
+
+    CircleCI: Heroku integration and pink backgroud
+
+Merge: 97cf6a7 6d5527e
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Fri Oct 26 13:33:04 2018 +0000
+
+    Merge pull request #14 from Brogramminggods/more_heroku
+    
+    More heroku
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 13:31:38 2018 +0000
+
+    CircleCI: removed mongoDB from the docker
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 13:29:40 2018 +0000
+
+    CircleCI: small edit
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 13:24:09 2018 +0000
+
+    CircleCI: more config experimentation
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 13:08:46 2018 +0000
+
+    CircleCI: changed config so that CircleCI will use npm hopefully....
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 13:03:49 2018 +0000
+
+    README: minor tweeks and added better linkes
+
+Merge: fc423b2 7933775
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Fri Oct 26 12:55:59 2018 +0000
+
+    Merge pull request #13 from Brogramminggods/more_heroku
+    
+    More heroku
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 12:52:33 2018 +0000
+
+    README: Heroku scaling instuctions
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 12:39:05 2018 +0000
+
+    README: Heroku instuctions
+
+Merge: 8404f50 fc423b2
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 26 12:17:36 2018 +0000
+
+    Merge branch 'master' of github.com:Brogramminggods/TicTacToe into more_heroku
+    "just getting todays version"
+
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Thu Oct 25 15:25:38 2018 +0000
+
+    Very important messages
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Thu Oct 25 11:04:52 2018 +0000
+
+    Pushing new build to Heroku
+
+Merge: 90d736b a9b91ea
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Thu Oct 25 10:41:23 2018 +0000
+
+    Merge pull request #12 from Brogramminggods/saemi_html
+    
+    Put all CSS in HTML header
+
+Author: saemundur <saemundur17@ru.is>
+Date:   Wed Oct 24 16:19:35 2018 +0000
+
+    Put all CSS in HTML header
+
+Merge: 02e33fc b4f3b56
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Tue Oct 23 18:36:23 2018 +0000
+
+    Merge pull request #11 from Brogramminggods/heroku
+    
+    Heroku README instutions
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 18:32:09 2018 +0000
+
+    Heroku readme instuctions
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 18:27:33 2018 +0000
+
+    Trying new css methord for heroku
+
+Merge: 90d4beb a856381
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Tue Oct 23 18:18:35 2018 +0000
+
+    Merge pull request #10 from Brogramminggods/heroku
+    
+    Heroku
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 18:13:29 2018 +0000
+
+    Cleaned up api.test.js
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 18:05:24 2018 +0000
+
+    Added Procfile and heroku-postbuild script
+
+Merge: c100e76 d5954b6
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Tue Oct 23 17:36:21 2018 +0000
+
+    Merge pull request #9 from Brogramminggods/heroku
+    
+    Heroku - pre-setup and server refactor
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 17:34:14 2018 +0000
+
+    Refactor: New server setup
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 17:19:03 2018 +0000
+
+    Refactored server implementation
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 16:51:37 2018 +0000
+
+    started working on heroku
+
+Merge: f24bc82 0708050
+Author: ReynirS <34032766+ReynirS@users.noreply.github.com>
+Date:   Tue Oct 23 16:31:57 2018 +0000
+
+    Merge pull request #8 from Brogramminggods/readme_modification
+    
+    Readme modification
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 16:28:55 2018 +0000
+
+    futher readme updates
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 16:25:28 2018 +0000
+
+    Temp: disabled css to improve heroku compatibilty
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Tue Oct 23 16:11:14 2018 +0000
+
+    edited dev depenendencies
+
+Merge: 7647468 e0966ba
+Author: stofiRU <43612102+stofiRU@users.noreply.github.com>
+Date:   Mon Oct 22 18:43:44 2018 +0000
+
+    Merge pull request #7 from Brogramminggods/KeepingScore
+    
+    Keeping score
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 22 18:14:57 2018 +0000
+
+    Added 'X to move/Y to move
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 22 17:51:32 2018 +0000
+
+    Now when a player wins, their score is incremented
+
+Merge: f5cdcd8 d441e44
+Author: stofiRU <43612102+stofiRU@users.noreply.github.com>
+Date:   Mon Oct 22 16:46:29 2018 +0000
+
+    Merge pull request #6 from Brogramminggods/stofiAndSaemiHTMLCSS
+    
+    Stofi and saemi htmlcss
+
+Merge: 7d319b1 f5cdcd8
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Mon Oct 22 16:36:59 2018 +0000
+
+    Merge branch 'master' of github.com:Brogramminggods/TicTacToe into stofiAndSaemiHTMLCSS
+    
+    CSS and HTML
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Mon Oct 22 16:34:59 2018 +0000
+
+    Text align, button
+
+Merge: d632203 512b908
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Mon Oct 22 16:33:05 2018 +0000
+
+    Merge pull request #5 from Brogramminggods/refactoringIndex
+    
+    Refactoring index
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Mon Oct 22 16:30:46 2018 +0000
+
+    Bootstrap, button
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 22 16:28:46 2018 +0000
+
+    added board insertion(In HTML) into a seperate function
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Mon Oct 22 16:14:11 2018 +0000
+
+    Darken CSS look
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Mon Oct 22 16:02:25 2018 +0000
+
+    Made tictactoe board insert into a seperate function that is called
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Mon Oct 22 15:56:46 2018 +0000
+
+    Game info HTML
+
+Merge: fe486cd 0e9117e
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Sun Oct 21 17:18:26 2018 +0000
+
+    Merge pull request #4 from Brogramminggods/ttt_functionality
+    
+    TTT basic draw detection & webpack.config update
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 21 17:15:47 2018 +0000
+
+    TTT basic draw detection & webpack.config update
+
+Merge: 78f13d3 b9831f4
+Author: egilltor17 <34064870+egilltor17@users.noreply.github.com>
+Date:   Sun Oct 21 15:54:44 2018 +0000
+
+    Merge pull request #3 from Brogramminggods/ttt_functionality
+    
+    Basic logig intigreated into web ui
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sun Oct 21 15:53:04 2018 +0000
+
+    Basic logig intigreated into web ui
+
+Merge: b55dee3 0332aab
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Sat Oct 20 21:27:32 2018 +0000
+
+    Merge pull request #2 from Brogramminggods/stofiCSS
+    
+    Stofi css
+
+Merge: 68ca3a3 8c1f18b
+Author: Ballihakkari <34066727+Ballihakkari@users.noreply.github.com>
+Date:   Sat Oct 20 21:21:34 2018 +0000
+
+    Merge pull request #1 from Brogramminggods/CreationOfAI
+    
+    Creation of ai
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sat Oct 20 21:18:53 2018 +0000
+
+    basic computer move AI finished and tested(for now)
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sat Oct 20 21:11:20 2018 +0000
+
+    SumOf2D sums upp the array, can be used for testing
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sat Oct 20 21:03:31 2018 +0000
+
+    AI function can insert
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sat Oct 20 20:50:13 2018 +0000
+
+    Text centered
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sat Oct 20 20:47:47 2018 +0000
+
+    Table created
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sat Oct 20 20:32:53 2018 +0000
+
+    Vertical separators
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sat Oct 20 20:28:45 2018 +0000
+
+    CSS init, HTML structure, basic table test
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sat Oct 20 20:02:18 2018 +0000
+
+    CSS
+
+Author: Kristófer Gudmundsson <kristofergudmundsson@Kristofers-MacBook-Pro.local>
+Date:   Sat Oct 20 19:47:34 2018 +0000
+
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sat Oct 20 19:34:03 2018 +0000
+
+    Super README
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sat Oct 20 19:08:56 2018 +0000
+
+    .gitingore updated
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sat Oct 20 18:51:01 2018 +0000
+
+    Un-borked the CircleCi config
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Sat Oct 20 18:35:01 2018 +0000
+
+    Added auto gen html and added a css, ( use npm install )
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Sat Oct 20 16:12:09 2018 +0000
+
+    Board validation and win conditions
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 19 17:31:34 2018 +0000
+
+    Invalid board handiling
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 19 16:00:28 2018 +0000
+
+    npm install webpack-dev-server --save-dev
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Fri Oct 19 15:07:56 2018 +0000
+
+    fixed tests so they do not fail
+
+Merge: dd2a527 abf458d
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Fri Oct 19 14:51:30 2018 +0000
+
+    merge conflicts fixed
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Fri Oct 19 14:45:38 2018 +0000
+
+    renamed stuff to make it more appropriate for our project
+
+Author: ballihakkari <ballibronze@gmail.com>
+Date:   Fri Oct 19 14:36:26 2018 +0000
+
+    Added logic from lab10 into files
+
+Merge: 67506cf 45feb06
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 19 14:22:47 2018 +0000
+
+    Merge branch 'master' of github.com:Brogramminggods/TicTacToe
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Fri Oct 19 14:22:19 2018 +0000
+
+    Webpack setup | ReRUN: npm install
+
+Author: Reynir Stefánsson <Reynir@Reynirs-MacBook-Pro.local>
+Date:   Fri Oct 19 13:59:59 2018 +0000
+
+    little fix for readme file
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Thu Oct 18 19:16:14 2018 +0000
+
+    ReadMe tweek
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Thu Oct 18 19:14:37 2018 +0000
+
+    Filestucture setup with dummy files
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Thu Oct 18 18:58:07 2018 +0000
+
+    CircleCI setup
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Thu Oct 18 18:46:45 2018 +0000
+
+    npm init & (jest, supertest, express) installed
+
+Author: egilltor17 <egilltor17@ru.is>
+Date:   Thu Oct 18 18:31:21 2018 +0000
+
+    Git init, README & .gitignore
