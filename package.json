@@ -21,24 +21,24 @@
     "url": "https://github.com/Brogramminggods/TicTacToe/issues"
   },
   "jest": {
-	"collectCoverage": true,
-    "coverageDirectory": "./docs/testCoverage" 
+    "collectCoverage": true,
+    "coverageDirectory": "./docs/testCoverage"
   },
   "homepage": "https://github.com/Brogramminggods/TicTacToe#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^1.0.0",
+    "css-loader": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
-    "jest": "^23.6.0",
-    "puppeteer": "^1.9.0",
+    "jest": "^26.6.3",
+    "puppeteer": "^1.20.0",
     "style-loader": "^0.23.1",
-    "supertest": "^3.3.0",
-    "webpack": "^4.21.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "supertest": "^3.4.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "lodash": "^4.17.11"
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
   }
 }
